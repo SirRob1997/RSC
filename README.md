@@ -19,10 +19,10 @@ Zeyi Huang, Haohan Wang, Eric P. Xing, and Dong Huang, Self-Challenging Improves
 ### Requirements:
 
 - Python ==3.7
-- Pytorch ==1.1.0
-- Torchvision == 0.3.0
-- Cuda ==10.0
-- Tensorflow ==1.14
+- Pytorch >=1.0.0
+- Torchvision >= 0.2.0
+- Cuda >=10.0
+- Tensorflow >=1.14
 - GPU: RTX 2080
 
 ## Data Preparation
