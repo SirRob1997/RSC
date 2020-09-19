@@ -87,6 +87,7 @@ class ResNet(nn.Module):
             sp_v = torch.ones([num_rois])
             one_hot_sparse = torch.sparse.FloatTensor(sp_i, sp_v, torch.Size([num_rois, class_num])).to_dense().cuda()
             one_hot_sparse = Variable(one_hot_sparse, requires_grad=False)
+            print(one_hot_sparse)
             one_hot = torch.sum(output * one_hot_sparse)
             self.zero_grad()
             one_hot.backward(retain_graph=True)
